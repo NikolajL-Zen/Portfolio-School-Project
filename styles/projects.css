@@ -1,0 +1,42 @@
+main{
+  margin-top: 70px;
+}
+
+body {
+  font-family: "kode mono";
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-color: #FF5400;
+  scroll-behavior: smooth;
+}
+
+h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fa5252;
+}
+
+.container{
+  padding: 30px 20px 20px 20px;
+}
+.project-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  justify-content: center; 
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  background-image: url("../pic/black\ abstract.jpg");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0 0 30px #141F93;
+          box-shadow: 0 0 30px #141F93;
+}
+
+.pic {
+  height: 400px;
+  border-radius: 10px;
+}

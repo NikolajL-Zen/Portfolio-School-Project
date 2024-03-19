@@ -1,0 +1,85 @@
+.header {
+  font-family: "kode mono";
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  background-color: #080808;
+  border-radius: 20px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0 0 30px #141F93;
+          box-shadow: 0 0 30px #141F93;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: #FF5400;
+  text-shadow: 0 0 3px #FF5400, 0 0 5px #141F93;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 180px;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 10px;
+}
+
+.home-icon,
+.about-icon,
+.contact-icon,
+.project-icon {
+  height: 30px;
+}
+
+.about-icon-container,
+.contact-icon-container,
+.project-icon-container,
+.home-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-icon-container:hover .tooltip,
+.contact-icon-container:hover .tooltip,
+.project-icon-container:hover  .tooltip,
+.home-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.about-icon-container .tooltip,
+.contact-icon-container .tooltip,
+.project-icon-container .tooltip,
+.home-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: #930000;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  right: -3px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}

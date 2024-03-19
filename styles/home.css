@@ -1,0 +1,68 @@
+body {
+  font-family: "kode mono";
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-color: #FF5400;
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: #080808;
+  background-image: url("../pic/black\ abstract.jpg");
+  background-size: cover;
+  border-radius: 40px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-box-shadow: 0 0 30px #141F93;
+          box-shadow: 0 0 30px #141F93;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.profile-pic-icon {
+  position: absolute;
+  display:flex ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  filter: saturate(150%);
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  color:transparent;
+  background-image: linear-gradient( to left, white,#FF5400, #FF5400);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -1750px 0;
+  animation: backcolor 15s linear infinite alternate;
+}
+
+@keyframes backcolor {
+  100%{
+    background-position: 0 0;
+  }
+  
+}
+
+.text-item {
+display: flex;
+font-size: 100px;
+}

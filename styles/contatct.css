@@ -1,0 +1,82 @@
+body{
+  background-color: #FF5400;
+}
+
+h1 {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #080808;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -70px; 
+  color: #FF5400;
+  background-image: url("../pic/black\ abstract.jpg");
+  background-size: cover;
+  -webkit-box-shadow: 0 0 30px #141F93;
+  box-shadow: 0 0 30px #141F93;
+}
+
+.form-icon {
+  height: 25px;
+  margin-right: 4px;
+}
+
+form {
+  width: 99%;
+  max-width: 600px;
+}
+
+.input-group{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+input, textarea { 
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FF5400;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+label {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  margin-top: 2px;
+  margin-left: 2px;
+  color: gray;
+  cursor: text;
+  transition: 0.2s;
+}
+
+button {
+  padding: 10px 0;
+  color: #FF5400;
+  outline: none;
+  background: transparent;
+  border: 1px solid #FF5400;
+  cursor: pointer;
+  width: 623px;
+
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  top:-35px;
+  font-size: 12px;
+}

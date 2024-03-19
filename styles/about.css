@@ -1,0 +1,40 @@
+body {
+  font-family: "kode mono";
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-color: #FF5400;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF5400;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "about-text about-text about-text"
+  "kvalifikationer kvalifikationer kvalifikationer"
+  "design design design"; 
+  grid-gap: 10px;
+  margin-top: 90px;
+  background-color: #080808;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 30px #141F93;
+          box-shadow: 0 0 30px #141F93;
+}
+
+.about-text,
+.uddannelse,
+.kvalifikationer,
+.certificeringer,
+.design {
+  color: rgb(255, 255, 255);
+}
